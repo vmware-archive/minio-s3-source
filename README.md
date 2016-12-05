@@ -3,6 +3,8 @@ An alternative to the AWS-S3 source for Spring Cloud Dataflow, primarily to supp
 <br>
 This stream source app was closely modeled after the AWS-S3 starter app.  Therefore much of the docs apply - http://docs.spring.io/spring-cloud-stream-app-starters/docs/1.1.0.BUILD-SNAPSHOT/reference/html/sources.html#spring-cloud-stream-modules-aws-s3-source <br>
 <br>
+The primary different is that this source supports specifying an API endpoint for issueing the requests.  Also added timeout settings for large file operations.<br>
+<br>
 To use:<br>
 1. package the jar file and store in a Maven or S3 location.  Don't forget to make the jar public for access from Spring Cloud Dataflow.<br>
 2. register the source from within SCDF shell<br>
